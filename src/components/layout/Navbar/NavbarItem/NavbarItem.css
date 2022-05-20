@@ -1,0 +1,18 @@
+.navbar_item {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navbar_item a {
+    padding: 10px 7px;
+    text-decoration: none;
+    color: rgb(118, 76, 76);
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.navbar_item a:hover {
+    background-color: lightgray;
+    color: wheat;
+}

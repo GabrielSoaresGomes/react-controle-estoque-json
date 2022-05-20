@@ -1,0 +1,7 @@
+.logo {
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: green; /*Tirar quando for imagem*/
+}
