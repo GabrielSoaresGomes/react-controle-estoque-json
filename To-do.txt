@@ -1,0 +1,9 @@
+Lista de afazeres neste projeto:
+
+- Adicionar lista de produtos;
+- Adicionar form de produtos;
+- Adicionar Vendas;
+- Calcular lucros;
+- Inserir clientes;
+- Inserir páginas de contas à pagar;
+- Painel principal na home com detalhes importantes;
