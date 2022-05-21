@@ -2,8 +2,12 @@ Lista de afazeres neste projeto:
 
 - Adicionar lista de produtos;
 - Adicionar form de produtos;
+- Adicionar json para ser o database utilizando o fs do node;
 - Adicionar Vendas;
+- Possibilidade de escolher o valor vendido e calcular peso e lucro;
+- Venda por diferntes tipos: Peso, valor, saco, varejo, etc;
 - Calcular lucros;
 - Inserir clientes;
 - Inserir páginas de contas à pagar;
 - Painel principal na home com detalhes importantes;
+- Ler planilha ou algo do tipo para inserir dados de outro sistema;

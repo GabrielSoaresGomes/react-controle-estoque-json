@@ -1,0 +1,17 @@
+.div_table {
+    margin: auto;
+    width: 1200px;
+    padding: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.222);
+    background-color: white;
+}
+
+#tableProdutos th {
+    padding-top: 4px;
+    background-color: darkgrey;
+}
+
+#tableProdutos * {
+    text-align: center;
+    justify-content: center;
+}
