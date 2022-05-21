@@ -10,4 +10,7 @@ Lista de afazeres neste projeto:
 - Inserir clientes;
 - Inserir páginas de contas à pagar;
 - Painel principal na home com detalhes importantes;
-- Ler planilha ou algo do tipo para inserir dados de outro sistema;
+- Ler planilha ou algo do tipo para inserir dados de outro sistema; (Não mais necessário por enquanto)
+- Criar o form de campos de um produto antes de criar um produto, e fazer o json atualizar os produtos ja existentes com esse novo campo!
+- Criar um form para categorias também;
+
