@@ -1,0 +1,20 @@
+.link_add_produto {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.link_add_produto:hover {
+    background-color: rgb(3, 3, 170);
+    color: gainsboro;
+}
+
+.div_link {
+    text-align: right;
+    margin: 4px auto;
+    width: 1200px;
+}
