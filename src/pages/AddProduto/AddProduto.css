@@ -1,0 +1,20 @@
+.head_add_produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head_add_produto a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    background: blue;
+    padding: 2px 4px;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.head_add_produto a:hover {
+    background-color: rgb(11, 11, 192);
+}

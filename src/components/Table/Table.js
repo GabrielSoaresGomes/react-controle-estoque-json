@@ -40,9 +40,9 @@ const Table = ({headList, tableValues}) => {
                     {tValues.map((value, index) => {
                         return(
                         <tr key={index}>
-                            {value.map((value) => {
+                            {value.map((value, indice) => {
                                 return(
-                                    <td>{value}</td>
+                                    <td key={`${index},${indice}`}>{value}</td>
                                 )
                             })}
                         </tr>)

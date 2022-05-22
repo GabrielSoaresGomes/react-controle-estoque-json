@@ -7,8 +7,8 @@ const Input = ({type, label, name, id, placeholder="", value=""}) => {
 
     return (
         <>
-            <label htmlFor={`input_${id}`}>{label}</label>
-            <input type={type} name={name} id={id} placeholder={null} value={val} onChange={(e) => {setVal(e.target.value)}}  />
+            <label className='input_label' htmlFor={`input_${id}`}>{label}</label>
+            <input className='input' type={type} name={name} id={id} placeholder={placeholder} value={val} onChange={(e) => {setVal(e.target.value)}}  />
         </>
     )
 }
