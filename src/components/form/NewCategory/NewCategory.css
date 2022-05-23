@@ -1,0 +1,22 @@
+.extra-select * {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.extra-select a {
+    color: blue;
+    cursor: pointer;
+}
+
+.extra-select a:hover {
+    color: rgb(65, 65, 220);
+}
+
+.extra-select-fields {
+    display: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+}
