@@ -1,3 +1,20 @@
 .input {
     width: 250px;
 }
+
+.div_checkbox {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_checkbox .input {
+    width: auto !important;
+}
+
+.hidden {
+    display: none;
+}

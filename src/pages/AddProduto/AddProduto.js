@@ -9,10 +9,12 @@ import Form from '../../components/form/Form/Form'
 import {getDatabase, ref, child, get} from 'firebase/database'
 import {useEffect, useState} from "react";
 
-
+import $ from 'jquery'
 
 const AddProduto = () => {
     const [categoriesOptions, setCategoriesOptions] = useState()
+    const [temVarejo, setTemVarejo] = useState(false)
+    const [precoVarejo, setPrecoVarejo] = useState(0)
 
     useEffect(() => {
         const categoriasRef = ref(getDatabase());
@@ -27,6 +29,19 @@ const AddProduto = () => {
             console.error(error);
         });
     })
+
+    $('#checkbox_varejo').on("change", function (e) { 
+        if ($(this).prop("checked")) {
+            $(this).val(true)
+            $(".input_label_preco_varejo").show()
+        }else{
+            $(this).val(false)
+            $(".input_label_preco_varejo").hide()
+            $("input_preco_varejo").val("e")
+        }
+        
+    })
+
     return(
         <Container>
             <div className='head_add_produto'>
@@ -36,6 +51,11 @@ const AddProduto = () => {
             <Form>
                 <Input type={"text"} label={"Digite o nome do produto: "} name="produto_name" id={"input_produto"} placeholder="Digite aqui... " />
                 <MySelect label={"Categoria: "} name={"select_categoria"} id={"select_categoria"} list_options={categoriesOptions} extra_link="#" />
+                <Input extra_class='hidden' type={"text"} label="Insira a unidade do produto ex:Kg, un, L, ml, saco, etc: "
+                    name={"unidade_produto"} id="input_unidade" placeholder='Kg, Un, L, ml, Saco, etc...' />
+                <Input type={"checkbox"} label="Seu produto tem à varejo? " name={"produto_varejo"} id="checkbox_varejo" />
+                <Input type={"number"} label="Insira o preço do produto: " name={"preco_produto"} id="input_preco" />
+                <Input value={precoVarejo} extra_class='hidden input_label_preco_varejo' type={"number"} label="Insira o preço à varejo do produto: " name={"preco_varejo"} id="input_preco_varejo" />
             </Form>
         </Container>
     )

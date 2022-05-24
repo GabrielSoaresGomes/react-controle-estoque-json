@@ -20,7 +20,6 @@ const NewCategory = () => {
             if (snapshot.exists()) {
                 let categorias = snapshot.val()
                 setCategories(categorias)
-                console.log(categories)
             } else {
                 console.log("No data available for categorias");
             }
