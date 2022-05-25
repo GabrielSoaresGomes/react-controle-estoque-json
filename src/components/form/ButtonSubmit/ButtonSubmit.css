@@ -1,0 +1,16 @@
+.button_submit {
+    background-color: rgba(0, 0, 255, 0.664);
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    margin: 10px 2px;
+    width: 240px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.button_submit:hover {
+    background-color: rgba(0, 0, 255, 0.486) ;
+}

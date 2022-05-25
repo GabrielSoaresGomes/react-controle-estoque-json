@@ -1,5 +1,10 @@
 .input {
-    width: 250px;
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    margin: 0;
+    padding-left: 8px;
+    outline: none;
 }
 
 .div_checkbox {

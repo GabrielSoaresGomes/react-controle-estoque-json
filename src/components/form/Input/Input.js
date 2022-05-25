@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Input.css'
 
-const Input = ({type, label, name, id, placeholder="", value="", extra_class="", extra_funcao=""}) => {
+const Input = ({type, label, name, id, placeholder="", value="", extra_class="", extra_funcao="", required=false}) => {
 
     const [val, setVal] = useState(value)
     return (
@@ -15,7 +15,7 @@ const Input = ({type, label, name, id, placeholder="", value="", extra_class="",
         :
         <div className='div_checkbox'>
             <label className={`input_label ${extra_class}`} htmlFor={`${id}`}>{label}</label>
-            <input className={`input ${extra_class}`} type={type} name={name} id={id} placeholder={placeholder} value={val} onChange={(e) => {setVal(e.target.value)}}  />
+            <input className={`input ${extra_class}`} type={type} name={name} id={id} placeholder={placeholder} value={val} required={required} onChange={(e) => {setVal(e.target.value)}}  />
         </div>
         }
         </>

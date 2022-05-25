@@ -1,8 +1,11 @@
 .select {
-    width: 250px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .div_select {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
