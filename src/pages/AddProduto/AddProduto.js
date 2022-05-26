@@ -58,20 +58,22 @@ const AddProduto = () => {
         
     })
 
-    $('#form_produto').on("submit", function() {
-        let produto_object = {}
-        produto_object["nome"] = $("#input_produto").val()
-        produto_object["categoria"] = $("#select_categoria").val()
-        produto_object["unidade"] = $("#input_unidade").val()
-        produto_object["custo"] = $("#input_custo").val()
-        produto_object["varejo"] = $("#checkbox_varejo").val()
-        produto_object["preco"] = $("#input_preco").val()
-        produto_object["preco_varejo"] = $("#input_preco_varejo").val()
-
-        
+    useEffect(() => {
+        $('#form_produto').on("submit", function(e) {
+            let produto_object = {}
+            produto_object["nome"] = $("#input_produto").val()
+            produto_object["categoria"] = $('#select_categoria input[name="select_categoria"]').val()
+            produto_object["unidade"] = $("#input_unidade").val()
+            produto_object["custo"] = $("#input_custo").val()
+            produto_object["varejo"] = $("#checkbox_varejo").val()
+            produto_object["preco"] = $("#input_preco").val()
+            produto_object["preco_varejo"] = $("#input_preco_varejo").val()
+            e.preventDefault()
+            console.log(produto_object)
+    
+            
+        })
     })
-
-
 
     return(
         <Container>
